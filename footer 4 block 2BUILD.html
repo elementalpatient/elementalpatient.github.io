@@ -1,0 +1,280 @@
+
+<style>
+      #amform-form-12{
+      border: #d3d3d3 2px solid;
+   }
+.pre-form-info {
+   background-color: transparent;
+   display: flex; 
+   flex-direction: row;
+   flex: 0 auto;
+   border: 1px solid #d3d3d3;
+   border-radius: 3px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   background-color: #d6878765;
+   letter-spacing: 1.3px;
+   font-size: 14px;
+
+}
+.pre-form-info::before {
+   font-family: FontAwesome;
+   content: '\f06a';
+   padding-right: 5px;
+   padding-left: 10px;
+   font-size: 14px;
+}
+
+#label_method_matrixrate_3_matrixrate{
+        color: #fc4a03!important;
+    font-weight: 600!important;
+    font-size: 14px!important;
+    white-space: nowrap!important;
+    text-transform: uppercase;
+
+}
+#label_carrier_matrixrate_3_matrixrate {
+    color: #fc4a03!important;
+    font-weight: 600!important;
+    font-size: 15px!important;
+    white-space: nowrap!important;
+    text-transform: uppercase;
+    background-image: url("/pub/media/wysiwyg/icon/michigan-icon.png") ;
+
+
+
+}
+#label_method_matrixrate_3_matrixrate::before {
+   font-family: "FontAwesome";
+    content: "\f061";
+    padding-right: 7px;
+    display: inline-block;
+
+
+}
+#label_carrier_matrixrate_3_matrixrate::after {
+   font-family: "FontAwesome";
+    content: "\f060";
+    padding-left: 7px;
+    display: inline-block;
+
+
+}
+@keyframes flash {
+   0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+#label_method_matrixrate_3_matrixrate::before, #label_carrier_matrixrate_3_matrixrate::after {
+   animation: flash 1s infinite!important;
+}
+   .amform-parent {
+      text-align: left;
+      padding-left: 12px;
+      padding-right: 12px;
+
+   }
+
+   .amform-form .action.primary,
+   .amform-parent .action.primary {
+      color: #1d1d1d !important;
+      font-weight: 600 !important;
+      height: 50px;
+      width: 260px;
+      font-size: 14px !important;
+   }
+
+   .amform-form .action.primary,
+   .amform-parent .action.primary:hover {
+      background-color: #ffd72f !important;
+   }
+
+   .yt-vid {
+      margin-bottom: 20px;
+      width: 1280px;
+      height: 400px;
+   }
+   .order.subtitle.caption {
+      text-align: center!important;
+      font-size: 18px!important;
+      font-weight: 600!important;
+   }
+   .data.table.order.tracking {
+      margin-right: auto!important;
+      margin-left: auto!important;
+   }
+
+   .page.messages {
+      margin: 15px!important;
+   }
+   .footer-btm {
+      color: #d3d3d334;
+      font-size: 12px;
+   }
+   .footer-btm p {
+      text-align: center!important;
+   }
+   /*below css for use on stage site only*/
+   .mbi-helper-questions-section {
+      display: none!important;
+   }
+   /*above css for use on stage site only*/
+
+@media screen and (min-width: 800px) {
+   .footer-btm {
+      color: #d3d3d334;
+      font-size: 12px;
+   }
+   .footer-btm p {
+      text-align: center;
+justify-content: center;
+   }
+   .product.alert.stock > .action.alert {
+      text-transform: uppercase!important;
+      font-size: 24px!important;
+      font-weight: 600!important;
+      color: rgb(211, 12, 12)!important;
+   }
+   .product.alert.stock::before {
+      font-family: FontAwesome;
+      content: "\f0e0"!important;
+      font-size: 24px;
+   }
+   .footer-middle {
+      padding-top: 30px!important;
+      padding-bottom: 10px!important;
+   }
+}
+@media screen and (max-width: 800px) {
+   .product.alert.stock > .action.alert {
+      text-transform: uppercase!important;
+      font-size: 18px!important;
+      font-weight: 600!important;
+      color: rgb(211, 12, 12)!important;
+   }
+   .product.alert.stock::before {
+      font-family: FontAwesome;
+      content: "\f0e0"!important;
+      font-size: 18px;
+   }
+}
+
+   @media screen and (max-width: 419px) {
+      .yt-vid {
+         width: 384px!important;
+         height: 200px!important;
+      }
+      .pre-form-info {
+         flex-direction: column;
+         max-width: 300px;
+         border-radius: 10px;
+         padding: 10px;
+
+      }
+      
+      .pre-form-container {
+         border: 2px solid #d3d3d3;
+      }
+
+   }
+   
+
+   
+
+   
+   </style>
+   
+   <div class="footer-middle">
+      <div class="row">
+         <div class="col-lg-3 col-md-12 about-store">
+            <div class="footer-block">
+               <div class="footer-block-content">
+                  <a href="<?php echo $block->getUrl(''); ?>#"><img src="{{media url="wysiwyg/homepage-images/mbi-B.png"}}" alt="" /></a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-2 col-md-12 customer-services">
+            <div class="footer-block">
+               <div class="footer-block-title">
+                  <h3>Quick Links</h3>
+               </div>
+               <div class="footer-block-content">
+                  <ul class="links-footer">
+
+                     <li><a href="{{config path="web/secure/base_url"}}locate-your-paint-code">Find Your Paint Code</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}shipping-and-handling">Shipping & Handling</a></li> 
+                     <li><a href="{{config path="web/secure/base_url"}}request-a-cancellation">Request A Cancellation</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}returns#warr">Warranty Information</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}returns">Returns & Cancellations</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}shippingtracker">Track Order</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}blog">Blog</a></li>
+                     <li><a href="{{config path="web/secure/base_url"}}faq">FAQ</a></li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-12 payment-shipping">
+            <div class="footer-block">
+               <div class="footer-block-title">
+                  <h3>Contact Info</h3>
+               </div>
+               <div class="footer-block-content">
+                  <ul class="links-contact">
+                     <a href="contact">
+                        <li class="add-icon">960 Freeman Ave SW <br>Grand Rapids, MI 49503</li>
+                     </a>
+                     <a href="mailto:support@mbiauto.com">
+                     <li class="email-icon middle-content">support@mbiauto.com</li>
+                     </a>
+                     <a href="tel:{{config path="general/store_information/phone"}}">
+                     <li class="phone-icon middle-content">{{config path="general/store_information/phone"}}</li>
+                     </a>
+                 
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-12 contact-footer">
+            <div class="footer-block">
+               <div class="footer-block-title">
+                 <h3>Follow Us</h3>
+                  <br>
+                 <div class="footer-block-content  newsletter-footer">
+               <!-- {{block class="Magento\Newsletter\Block\Subscribe" template="subscribe-footer.phtml"}}  -->
+                <ul class="social-list" style="margin-top: auto;"> 
+   <li><a href="https://www.youtube.com/channel/UCTj0EnzhfCEIuAL-DqDLBEQ"><i class="fab fa-youtube"></i><span class="hidden">Youtube</span></a></li>
+                  <!-- <li><i class="fab fa-facebook"></i><span class="hidden">Facebook</span></li> 
+                      <li><i class="fab fa-twitter"></i><span class="hidden">Twitter</span></li> 
+                     <li><i class="fab fa-instagram"></i><span class="hidden">Instagram</span></li>  -->
+                     
+   
+                  </ul>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <div class="footer-btm col-lg-12">
+
+         <div class=" row justify-content-center">
+            <div>
+               <ol style="list-style-type: none; margin-left: -40px!important;">
+               <li class=" d-inline"><a href="sitemaps/sitemap.xml">Sitemap</a></li> &middot;
+               <li class=" d-inline"><a href="mailto:support@mbiauto.com">DMCA</a></li> &middot;
+               <li class=" d-inline"><a href="contact">Contact</a></li> &middot;
+               <li class=" d-inline"><a href="terms-of-use">Terms Of Use</a></li> &middot;
+               <li class=" d-inline"><a href="privacy-policy">Privacy Policy</a></li> &middot;
+               <li class=" d-inline"><a href="california-prop-65">California Proposition 65</a></li>
+      
+      
+      
+               </ol>
+            </div>
+         </div>
+
+   </div>
+
+   </div>
+
+   </div>

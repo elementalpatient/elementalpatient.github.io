@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+li {
+list-style: none;
+line-height: normal;
+}
+.centerme {
+text-align: center;
+}
+.footer-bg {
+background-color: #edf2fa; 
+padding-top: 5px; 
+padding-bottom: 5px;
+}
+.email-contact-info {
+    padding-left: 30px;
+
+}
+
+</style>
+<div class="centerme">
+{{template config_path="design/email/header_template"}}
+</div>
+</head>
+<body>
+<p class="greeting">{{trans "%name," name=$customerName}}</p>
+{{var alertGrid|raw}}
+
+<div class="centerme">
+{{template config_path="design/email/footer_template"}}
+</div>
+
+<div class="footer-bg">
+<div class="email-contact-info">
+<b><h3>Contact Information</h3></b>
+<em>We are open Monday - Friday 9am - 6pm Eastern Standard Time</em>
+<ul>
+<li>
+    Phone: <a href="Tel:6163346200">616-334-6200 </a>
+</li>
+<li>Email: <a href="mailto:support@mbiauto.com">support@mbiauto.com</a></li>
+<li>Or via live chat @ <a href="https://bumpersthatdeliver.com" target="_blank">bumpersthatdeliver.com </a></li>
+
+</ul>
+</div>
+</div>
+</body>
+</html>

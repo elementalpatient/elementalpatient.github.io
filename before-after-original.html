@@ -1,0 +1,683 @@
+
+<script>
+
+    class BeforeAfter {
+        constructor(enteryObject) {
+    
+            const beforeAfterContainer = document.querySelector(enteryObject.id);
+            const before = beforeAfterContainer.querySelector('.bal-before');
+            const beforeText = beforeAfterContainer.querySelector('.bal-beforePosition');
+            const afterText = beforeAfterContainer.querySelector('.bal-afterPosition');
+            const handle = beforeAfterContainer.querySelector('.bal-handle');
+            var widthChange = 0;
+    
+            beforeAfterContainer.querySelector('.bal-before-inset').setAttribute("style", "width: " + beforeAfterContainer.offsetWidth + "px;")
+            window.onresize = function () {
+                beforeAfterContainer.querySelector('.bal-before-inset').setAttribute("style", "width: " + beforeAfterContainer.offsetWidth + "px;")
+            }
+            before.setAttribute('style', "width: 50%;");
+            handle.setAttribute('style', "left: 50%;");
+    
+            //touch screen event listener
+            beforeAfterContainer.addEventListener("touchstart", (e) => {
+    
+                beforeAfterContainer.addEventListener("touchmove", (e2) => {
+                    let containerWidth = beforeAfterContainer.offsetWidth;
+                    let currentPoint = e2.changedTouches[0].clientX;
+    
+                    let startOfDiv = beforeAfterContainer.offsetLeft;
+    
+                    let modifiedCurrentPoint = currentPoint - startOfDiv;
+    
+                    if (modifiedCurrentPoint > 10 && modifiedCurrentPoint < beforeAfterContainer.offsetWidth - 10) {
+                        let newWidth = modifiedCurrentPoint * 100 / containerWidth;
+    
+                        before.setAttribute('style', "width:" + newWidth + "%;");
+                        afterText.setAttribute('style', "z-index: 1;");
+                        handle.setAttribute('style', "left:" + newWidth + "%;");
+                    }
+                });
+            });
+    
+            //mouse move event listener
+            beforeAfterContainer.addEventListener('mousemove', (e) => {
+                let containerWidth = beforeAfterContainer.offsetWidth;
+                widthChange = e.offsetX;
+                let newWidth = widthChange * 100 / containerWidth;
+    
+                if (e.offsetX > 10 && e.offsetX < beforeAfterContainer.offsetWidth - 10) {
+                    before.setAttribute('style', "width:" + newWidth + "%;");
+                    afterText.setAttribute('style', "z-index:" + "1;");
+                    handle.setAttribute('style', "left:" + newWidth + "%;");
+                }
+            })
+    
+        }
+    }
+    </script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    
+    @media all and (max-width:375px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 2000px !important;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 10px 0;
+            margin-bottom: 30px;
+    
+        }
+    }
+    
+    @media all and (max-width:479px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1800px !important;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 10px 0;
+            height: 80% !important;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.315) 0px 5px 6px;
+            box-shadow: rgba(0, 0, 0, 0.315) 0px 5px 6px;
+        }
+    
+        .bal-after img,
+        .bal-before img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+            -o-object-position: 50% 50%;
+            object-position: 50% 50%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+    
+        .bal-title h2 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #444444
+        }
+    }
+    
+    @media all and (max-width:599px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1800px !important;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 10px 0;
+            margin-bottom: 30px;
+    
+        }
+    }
+    
+    @media all and (min-width:480px) and (max-width:768px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1800px;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 10px 0;
+            margin-bottom: 30px;
+    
+        }
+    }
+    
+    @media all and (min-width:768px) and (max-width:959px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1800px;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 10px 0;
+            margin-bottom: 30px;
+    
+        }
+    }
+    
+    @media all and (min-width:960px) and (max-width:1199px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1800px;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 0 10px;
+            margin-bottom: 30px;
+    
+        }
+    }
+    
+    @media all and (min-width:1199px) {
+        .mainSection {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            width: 100%;
+            height: 1950px;
+            padding: 10px
+        }
+    
+        .bal-container {
+            margin: 0 10px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .bal-title h2 {
+        text-align: center
+    }
+    
+    .customer-feedback {
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    
+    .customer-feedback-text::before {
+        margin: 0 auto;
+        font-family: FontAwesome;
+        content: " \f10d ";
+        font-size: 18px;
+        color: #000;
+        padding-right: 10px;
+    }
+    
+    .customer-feedback-text::after {
+        font-family: FontAwesome;
+        margin: 0 auto;
+        content: "\f10e";
+        font-size: 18px;
+        color: #000;
+        padding-left: 10px;
+    }
+    
+    .bal-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: -webkit-grab;
+        cursor: grab;
+        overflow: hidden;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.562) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.562) 0px 5px 15px;
+    }
+    
+    
+    .bal-after {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden
+    }
+    
+    .bal-before {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 15;
+        overflow: hidden
+    }
+    
+    .bal-before-inset {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0
+    }
+    
+    .bal-after img,
+    .bal-before img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -o-object-position: 50% 50%;
+        object-position: 50% 50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .bal-beforePosition {
+        background: #121212;
+        color: #fff;
+        left: 0;
+        pointer-events: none;
+        border-radius: .2rem;
+        padding: 2px 10px
+    }
+    
+    .bal-afterPosition {
+        background: #121212;
+        color: #fff;
+        right: 0;
+        pointer-events: none;
+        border-radius: .2rem;
+        padding: 2px 10px
+    }
+    
+    .beforeLabel {
+        position: absolute;
+        bottom: 0;
+        margin: 1rem;
+        font-size: 1em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .afterLabel {
+        position: absolute;
+        bottom: 0;
+        margin: 1rem;
+        font-size: 1em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    .bal-handle {
+        height: 41px;
+        width: 41px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -20px;
+        margin-top: -21px;
+        border: 2px solid #fff;
+        border-radius: 1000px;
+        z-index: 20;
+        pointer-events: none;
+        -webkit-box-shadow: 0 0 10px #0c0c0c;
+        box-shadow: 0 0 10px #0c0c0c
+    }
+    
+    .handle-left-arrow,
+    .handle-right-arrow {
+        width: 0;
+        height: 0;
+        border: 6px inset transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -6px
+    }
+    
+    .handle-left-arrow {
+        border-right: 6px solid #fff;
+        left: 50%;
+        margin-left: -17px
+    }
+    
+    .handle-right-arrow {
+        border-left: 6px solid #fff;
+        right: 50%;
+        margin-right: -17px
+    }
+    
+    .bal-handle::before {
+        bottom: 50%;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0 0 10px #0c0c0c;
+        box-shadow: 0 0 10px #0c0c0c
+    }
+    
+    .bal-handle::after {
+        top: 50%;
+        margin-top: 20.5px;
+        -webkit-box-shadow: 0 0 5px #0c0c0c;
+        box-shadow: 0 0 5px #0c0c0c
+    }
+    
+    .bal-handle::after,
+    .bal-handle::before {
+        content: " ";
+        display: block;
+        width: 2px;
+        background: #fff;
+        height: 9999px;
+        position: absolute;
+        left: 50%;
+        margin-left: -1.5px
+    }
+    </style>
+    
+    
+    <body>
+    <hr>
+    
+    <div class="mainSection">
+    <span class="bal-title">
+        <a style="padding-top: 32px;" name="before-after-section">
+            <h2>Here's Some of Our Customer Submitted Before & After Photos</h2>
+        </a>
+        <br>
+    </span>
+    <div class="customer-feedback">
+        <p class="customer-feedback-text"> Hello Customer Support at MBI auto,
+    
+    
+    
+            I just want to take a second and complement this company especially the customer support team that
+            helped me. I received a damaged part from MBI and contacted the support team. My problem was quickly
+            remedied and my replacement part arrived much sooner than expected and was flawless. Paint match was
+            spot on. I am very happy that I did business here and will recommend MBI any time I get a chance to.
+            Once again thanks and have a Happy New Year!! <br><i>-Ebay Customer Jason C</i></p>
+    </div>
+    <div style="position: relative;" id="oneone" class="bal-container">
+        <div style="position: absolute;" class="bal-after">
+            <img src="media/wysiwyg/before-after/pilot-after.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+    
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="media/wysiwyg/before-after/pilot-before.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+            </div>
+        </div>
+    
+        <div class="bal-handle">
+            <span class=" handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+        </div>
+    
+    </div>
+    
+    <!-- <div class="customer-feedback">
+        <p class="customer-feedback-text">  <br><i>
+            </i></p>
+    </div>-->
+    
+    <div id="one" class="bal-container">
+        <div class="bal-after">
+            <img src="media/wysiwyg/before-after/before-1.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+    
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="media/wysiwyg/before-after/after-1.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+            </div>
+        </div>
+    
+        <div class="bal-handle">
+            <span class=" handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+        </div>
+    
+    </div>
+    
+    <div class="customer-feedback">
+        <p class="customer-feedback-text"> This was the before photo. I can take a better picture
+            of it tomorrow. It was a very minor fender bender. My daughter's car. She was tapped in the back
+            from a friend leaving her dance class. But there was a small crack and scuffs. She was not happy
+            with it. When I showed it to her fixed I got a smile and a thank you. Very rare these days. When I
+            took the bumper cover off, the rim of the trunk opening, with the weather stripping, was pushed in
+            very slightly. But you couldn't tell unless the bumper cover is off. That one clip was not clipping
+            on. The upper right clip on the bumper cover. I just have to mess with it. <br><i>-Ebay Customer Scott D
+            </i></p>
+    </div>
+    
+    <div id="two" class="bal-container">
+        <div class="bal-after">
+            <img src="media/wysiwyg/before-after/after-2.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="media/wysiwyg/before-after/before-2.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+    
+            </div>
+        </div>
+        <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+    
+        </div>
+    </div>
+    
+    <div id="three" class="bal-container">
+        <div class="bal-after">
+            <img src="media/wysiwyg/before-after/after-3.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="media/wysiwyg/before-after/before-3.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+    
+            </div>
+        </div>
+        <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+    
+        </div>
+    </div>
+    
+     <div class="customer-feedback">
+        <p class="customer-feedback-text">MBI Auto saved me over $800 at the body shop after I hit an animal on my way home from work. This is
+            one of the best transactions ive ever encountered and will refer them to anybody that needs their
+            services. The install took under 2 hours by myself and I could not be happier with the outcome. I
+            bought my 2007 Accord brand new in 2007 and have always taken it to the Honda dealer for everything,
+            that changed when I discovered MBI Auto. The color match is phenomenal. 
+            Thanks MBI! <br><i>-Ebay Customer Wesley S
+            </i> </p>
+    </div>
+    <div id="four" class="bal-container">
+        <div class="bal-after">
+            <img src="media/wysiwyg/before-after/after-5-1.jpg">
+            <div class="bal-afterPosition afterLabel">
+                After
+            </div>
+        </div>
+        <div class="bal-before">
+            <div class="bal-before-inset">
+                <img src="media/wysiwyg/before-after/before-5-1.jpg">
+                <div class="bal-beforePosition beforeLabel">
+                    Before
+                </div>
+    
+            </div>
+        </div>
+        <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+    
+        </div>
+    </div>
+    <p></p>
+    
+    <script>
+        new BeforeAfter({
+            id: '#oneone'
+        });
+        new BeforeAfter({
+            id: '#one'
+        });
+        new BeforeAfter({
+            id: '#two'
+        });
+        new BeforeAfter({
+            id: '#three'
+        });
+        new BeforeAfter({
+            id: '#four'
+        });
+    </script>
+    
+    

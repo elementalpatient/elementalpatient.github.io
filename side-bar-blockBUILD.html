@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+    <style type="text/css">
+        #side-bar {
+            height: 800px;
+            width: 18%;
+            position: relative;
+            float: left;
+            top: 90px;
+            left: 0;
+            overflow-x: hidden;
+            background-color: rgba(255, 255, 255, 0.144);
+            box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0);
+            -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.075),
+                0px 0px 5px 0px rgba(0, 0, 0, 0.062),
+                0px 0px 3px 0px rgba(0, 0, 0, 0.048),
+                0px 3px 1px 0px rgba(0, 0, 0, 0.034);
+        }
+
+        #side-head {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+            color: black;
+        }
+
+        #side-head1 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 0px;
+            color: rgb(255, 255, 255);
+        }
+
+        #side-hr {
+            border-style: solid;
+            border-bottom: 2px solid #000;
+            width: 66.6vw;
+            color: black;
+        }
+
+        hr.side-hr1 {
+            border: 0;
+            border-style: solid;
+            border-bottom: 2px;
+            border-top: 2px;
+            width: 66.6vw;
+            height: 2px;
+            background-color: #f4c715;
+        }
+
+        #quote {
+            text-align: center;
+            font-size: 13px;
+            color: #000;
+        }
+
+        .quocon {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .conta1 {
+            background-color: #000;
+        }
+
+        .side-links {
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .hourstitle {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .hours {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .head-cont {
+            background-color: #f4c715;
+        }
+
+        .quote {
+            position: relative;
+            padding-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .contact {
+            padding-left: 0px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        @media (min-width: 1200px) {
+            body.wide .container {
+                width: 1200px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-wrapper">
+    <div id="side-bar">
+        <div class="head-cont">
+            <p id="side-head"> Quick Links </p>
+            <hr id="side-hr">
+        </div>
+        <div class="side-links">
+            <a href="/" target="_blank">Find Your Part</a> <br>
+            <a href="/locate-your-paint-code" target="_blank">Find Your Paint Code</a> <br>
+            <a href="/customer-reviews" target="_blank">Customer Reviews</a> <br>
+            <a href="/returns" target="_blank">Return Information </a> <br>
+            <a href="/customer/account/login" target="_blank">My Account</a> <br>
+            <a href="/checkout/cart" target="_blank">Shopping Cart</a> <br>
+            <a href="/faq" target="_blank">FAQ</a> <br>
+
+        </div>
+        <div class="conta1">
+            <hr class="side-hr1">
+            <p id="side-head1"> Contact Info </p>
+            <hr class="side-hr1">
+        </div>
+        <div class="contact">
+            <!--<p class="hourstitle">Hours of Operation :</p>-->
+            <p class="hours"> 9am - 6pm Monday - Friday EST</p>
+
+            <i class="fal fa-phone" aria-hidden="true"></i> &nbsp; <a href="tel:6163346200"
+                target="_blank">616-334-6200</a> <br>
+            <i class="fal fa-envelope" aria-hidden="true"></i> &nbsp; <a href="mailto:support@mbiauto.com"
+                target="_blank">support@mbiauto.com</a> <br>
+            <i class="fal fa-map-signs" aria-hidden="true"></i> &nbsp; <a
+                href="https://www.google.com/maps/place/960+Freeman+Ave+SW,+Grand+Rapids,+MI+49503" target="_blank"> 960
+                Freeman Ave SW <br /> &nbsp;&nbsp; Grand Rapids, MI 49503</a>
+        </div>
+        <div class="quocon">
+            <div class="quote">
+                <p id="quote">Need a quote on a product we dont have listed?</p>
+                {{widget type="Amasty\Customform\Block\Init" template="Amasty_Customform::init.phtml" form_id="6"}}
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

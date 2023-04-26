@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+    <style>
+        .wrapme {
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 1000px;
+            box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0);
+                -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.075),
+                    0px 0px 5px 0px rgba(0, 0, 0, 0.062),
+                    0px 0px 3px 0px rgba(0, 0, 0, 0.048),
+                    0px 3px 1px 0px rgba(0, 0, 0, 0.034);
+        }
+
+        .wrapmee {
+            width: 100%;
+            padding-left: 250px;
+        }
+        .head-title3 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+
+        .body-cont3 {
+            padding-left: 10px;
+            width: 100%;
+
+        }
+        .body-title4 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-bar1">
+        <p>{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="124"}}
+        </p>
+    </div>
+    <br>
+    <div class="wrapmee">
+        <h1 class="head-title3">Returns & Cancellations</h1>
+
+        <div class="wrapme">
+
+            <div class="body-cont3">
+                <p class="body-title4">Return Policies & Procedures</p>
+                
+                <p class="body-title4">Cancellation Policies & Procedures</p>
+            </div>
+        </div>
+    </div>
+</body>

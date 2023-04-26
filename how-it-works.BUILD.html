@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+    <style>
+        .hdiw-wrapper {
+            display: block;
+            height: 306px;
+            align-content: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            max-width: 1280px
+        }
+
+        .hdiw-content {
+            border: 1px solid #d1d1d1;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        .hdiw-content .row .col-md-12 {
+            max-width: 1280px !important
+        }
+
+        .hdiw-content h2 {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            color: #f4c715;
+            margin-bottom: 20px;
+            margin-top: 10px
+        }
+
+        .icon-b {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #1d1d1d;
+            opacity: .75;
+            filter: drop-shadow(2px 5px 1px rgba(177, 177, 177, .315));
+
+        }
+
+        .home-top-steps {
+            display: flex;
+            flex-direction: row;
+            max-width: 1280px
+        }
+
+        .home-top-steps h3 {
+            margin-bottom: 10px;
+            color: #242424;
+            font-size: 18px
+        }
+
+        .hdiw-content .home-top-steps p {
+            margin: 10px;
+            font-size: 14px;
+            text-transform: capitalize !important
+        }
+
+        .home-top-steps span {
+            color: #f4c715;
+            font-size: 21px;
+            font-weight: 700
+        }
+
+        .hdiw-content .home-top-steps li {
+            width: 100%;
+            float: left;
+            padding: 0 10px;
+            position: relative;
+            text-align: center
+        }
+
+        .hdiw-content .home-top-steps li:not(:last-child):after {
+            content: '';
+            width: 2px;
+            height: 161px;
+            background: url(../pub/media/wysiwyg/step-sep/step-separator-solid.png) no-repeat top left;
+            background-size: 2px 161px;
+            float: none !important;
+            position: absolute;
+            right: -1.5px;
+            top: 50%;
+            opacity: .2;
+            margin-top: -80px;
+           /* box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.342); */
+        }
+
+        @media screen and (max-width:420px) {
+            .hdiw-wrapper {
+                position: relative;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                height: 1175px;
+                }
+
+            .hdiw-content {
+                border: 1px solid #d1d1d1;
+                height: 1175px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -30px;
+                margin-bottom: -15px;
+            }
+
+            .hdiw-content .home-top-steps li:not(:last-child):after {
+                display: none
+            }
+
+            .hdiw-content h2 {
+                font-weight: 700;
+                font-size: 30px;
+                text-align: center;
+                color: #f4c715;
+                margin-bottom: 20px
+            }
+
+            .icon-b {
+                font-size: 44px;
+                margin-bottom: 10px;
+                color: #1d1d1d;
+                padding-bottom: 10px
+
+            }
+
+            .home-top-steps {
+                display: flex;
+                flex-direction: column;
+                height: 1000px
+            }
+
+            .home-top-steps h3 {
+                margin-bottom: 10px;
+                color: #242424
+            }
+
+            .hdiw-content .home-top-steps li {
+                padding-top: 10px;
+                width: auto;
+                max-width: 200px;
+                margin: 0 auto 20px auto;
+                position: relative;
+                left: 0;
+                float: none
+            }
+            .who-we-are {
+                margin-top: 30px!important;
+            }
+        }
+
+        @media screen and (min-width:421px) and (max-width:938px) {
+            .hdiw-wrapper {
+                position: relative;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                height: 1075px;
+            }
+
+            .hdiw-content {
+                border: 1px solid #d1d1d1;
+                height: 1075px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -30px;
+                margin-bottom: -15px;
+            }
+
+            .hdiw-content .home-top-steps li:not(:last-child):after {
+                display: none
+            }
+
+            .hdiw-content h2 {
+                font-weight: 600;
+                font-size: 24px;
+                text-align: center;
+                color: #f4c715;
+                margin-bottom: 20px
+            }
+
+            .icon-b {
+                padding-bottom: 10px
+            }
+
+            .icon-b {
+                font-size: 48px;
+                margin-bottom: 10px;
+                color: #1d1d1d
+            }
+
+            .home-top-steps {
+                display: flex;
+                flex-direction: column;
+                height: 250px;
+                
+            }
+
+            .home-top-steps h3 {
+                font-size: 14px;
+                margin-bottom: 10px;
+                color: #242424
+            }
+
+            .home-top-steps li p {
+                font-size: 12px !important
+            }
+
+            .hdiw-content .home-top-steps li {
+                padding-top: 10px;
+                width: auto;
+                max-width: 200px;
+                margin: 0 auto 20px auto;
+                position: relative;
+                left: 0;
+                float: none
+            }
+            .who-we-are {
+                margin-top: 15px!important;
+            }
+        }
+        .who-we-are {
+            margin-top: -5px!important;
+            margin-bottom: 15px!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hdiw-wrapper">
+        <div class="hdiw-content ">
+            <div class="container">
+                <div class="row hdiw-row">
+                    <div class="col-md-12">
+                        <h2>The Ordering Process</h2>
+                        <ul class="home-top-steps">
+                            <li class="home-step-1">
+                                <i class="fas fa-bars icon-b"></i>
+                                <h3><span>1.</span> SELECT YOUR VEHICLE</h3>
+                                <p>By choosing your part type, year, make, and model.</p>
+                            </li>
+                            <li class="home-step-2">
+                                <i class="fas fa-question icon-b"></i>
+                                <h3><span>2.</span> WE ASK YOU </h3>
+                                <p> questions about your vehicle so we can ensure 100% product compatibility.</p>
+                            </li>
+                            <li class="home-step-3">
+                                <i class="fas fa-mouse-pointer icon-b"></i>
+                                <h3><span>3.</span> SELECT YOUR COLOR</h3>
+                                <p>Select your paint code to match your factory color</p>
+                                <em>Most parts available unpainted</em>
+                                
+                            </li>
+                            <li class="home-step-4">
+                                <i class="fas fa-shipping-fast icon-b"></i>
+                                <h3><span>4.</span> SHIPPED OR LOCAL PICKUP</h3>
+                                <p>We can ship it to you, or you can pick it up at our facility in Grand Rapids, MI.</p>
+                            </li>
+                            <li class="home-step-5">
+                                <i class="fas fa-tools icon-b"></i>
+                                <h3><span>5.</span> INSTALL THE PART</h3>
+                                <p>Save valuable time & money by installing the part yourself.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

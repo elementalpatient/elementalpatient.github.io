@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+<title>.</title>
+<style>
+.dt-pnt-menu li {
+  list-style-type: none;
+  display: inline-block;
+margin-left: 0;
+margin-right: 0;
+position: relative;
+
+
+}
+.dt-pnt-menu li:not(:last-child)::after {
+  font-size: 18px!important;
+  content: " | ";
+  color: #2f2f2fb4!important;
+}
+
+.dt-pnt-menu li a {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+
+}
+.menwrap {
+  text-align: center;
+ /* border-right: 2px solid #000;
+  border-left: 2px solid #000;*//*removed for product page modal*/
+}
+.dt-pnt-head {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+
+
+.mobileHide {
+    display: inline;
+}
+.mobileShow {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 50em) {
+    .mobileHide {
+        display: none;
+    }
+    .mobileShow {
+        display: inline;
+    }
+    .mobcntr {
+        text-align: center;
+    }
+    p.mobile-pnt-head {
+      font-size: 13px;
+      color: #666666!important;
+    }
+    .mob-drpdwn {
+        position: relative;
+        text-align: center;
+    }
+    #dropdownMenuButton {
+      color: #242424!important;
+      font-weight: 600!important;
+      letter-spacing: 1.5px;
+    }
+    #dropdownMenuButton:hover {
+      font-size: 14px!important;
+      color: #fff!important;
+    }
+
+
+a.dropdown-item {
+  font-size: 16px;
+
+}
+
+}
+@media screen and (min-width: 50.1em) and (max-width: 64em) {
+ .mobileShow {
+   display: none;
+ }
+ .mobileHide {
+   display: inline;
+ }
+ .dt-pnt-head {
+   font-size: 19px;
+top: 10px;
+ }
+ .dt-pnt-menu li a {
+   font-size: 17px;
+ }
+#volvo-cont {
+z-index: 1;}
+}
+
+
+</style>
+</head>
+<body>
+    <div class="mobileHide">
+      <div class="menwrap col-md-12">
+        <p class="dt-pnt-head">Select your vehicles manufacturer from the menu below to quickly navigate to the instructions specific to your vehicles brand</p>
+        <ul class="dt-pnt-menu">
+          <li><a href="#hofc">Acura </a></li>
+          <li><a href="#aufc">Audi </a></li>
+          <li><a href="#bmfc">BMW </a></li>
+          <li><a href="#gmfc">Buick </a></li>
+          <li><a href="#gmfc">Cadillac </a></li>
+          <li><a href="#gmfc">Chevrolet </a></li>
+          <li><a href="#mofc">Chrysler </a></li>
+          <li><a href="#mofc">Dodge </a></li>
+          <li><a href="#mofc">Fiat </a></li>
+          <li><a href="#fofc">Ford </a></li>
+          <li><a href="#gmfc">GMC </a></li>
+          <li><a href="#hofc">Honda </a></li>
+          <li><a href="#kifc">Hyundai </a></li>
+          <li><a href="#nifc">Infiniti </a></li>
+          <li><a href="#mofc">Jeep </a></li>
+          <li><a href="#kifc">Kia </a></li>
+          <li><a href="#tofc">Lexus </a></li>
+          <li><a href="#fofc">Lincoln </a></li>
+          <br>
+          <li><a href="#fofc">Mazda </a></li>
+          <li><a href="#mbfc">Mercedes-Benz </a></li>
+          <li><a href="#gmfc">Mercury </a></li>
+          <li><a href="#nifc">Mitsubishi </a></li>
+          <li><a href="#nifc">Nissan </a></li>
+          <li><a href="#gmfc">Oldsmobile </a></li>
+          <li><a href="#gmfc">Pontiac </a></li>
+          <li><a href="#mofc">RAM </a></li>
+          <li><a href="#gmfc">Saturn </a></li>
+          <li><a href="#tofc">Scion </a></li>
+          <li><a href="#sufc">Subaru </a></li>
+          <li><a href="#tofc">Toyota </a></li>
+          <!--<li><a href="/no-route">Volkswagen </a></li>-->
+          <li><a href="#vofc">Volvo </a></li>
+
+
+          
+
+        </ul>
+
+      </div>
+</div>
+    <!--start mobile menu-->
+    <div class="mobileShow">
+        <div class="mobcntr">
+        <div class="mob-drpdwn">
+          <p class="mobile-pnt-head">Select your vehicles manufacturer from the menu below to quickly navigate to the instructions specific to your vehicles brand</p>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Your Manufacturer
+          </button>
+              <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#hofc">Acura </a>
+                <a class="dropdown-item" href="#aufc">Audi </a>
+                <a class="dropdown-item" href="#bmfc">BMW </a>
+                <a class="dropdown-item" href="#gmfc">Buick </a>
+                <a class="dropdown-item" href="#gmfc">Cadillac </a>
+                <a class="dropdown-item" href="#gmfc">Chevrolet </a>
+                <a class="dropdown-item" href="#mofc">Chrysler </a>
+                <a class="dropdown-item" href="#mofc">Dodge </a>
+                <a class="dropdown-item" href="#mofc">Fiat </a>
+                <a class="dropdown-item" href="#fofc">Ford </a>
+                <a class="dropdown-item" href="#gmfc">GMC </a>
+                <a class="dropdown-item" href="#hofc">Honda </a>
+                <a class="dropdown-item" href="#kifc">Hyundai </a>
+                <a class="dropdown-item" href="#nifc">Infiniti </a>
+                <a class="dropdown-item" href="#mofc">Jeep </a>
+                <a class="dropdown-item" href="#kifc">Kia </a>
+                <a class="dropdown-item" href="#tofc">Lexus </a>
+                <a class="dropdown-item" href="#fofc">Lincoln </a>
+                <a class="dropdown-item" href="#fofc">Mazda </a>
+                <a class="dropdown-item" href="#mbfc">Mercedes-Benz </a>
+                <a class="dropdown-item" href="#gmfc">Mercury </a>
+                <a class="dropdown-item" href="#nifc">Mitsubishi </a>
+                <a class="dropdown-item" href="#nifc">Nissan </a>
+                <a class="dropdown-item" href="#gmfc">Oldsmobile </a>
+                <a class="dropdown-item" href="#gmfc">Pontiac </a>
+                <a class="dropdown-item" href="#mofc">RAM </a>
+                <a class="dropdown-item" href="#gmfc">Saturn </a>
+                <a class="dropdown-item" href="#tofc">Scion </a>
+                <a class="dropdown-item" href="#sufc">Subaru </a>
+                <a class="dropdown-item" href="#tofc">Toyota </a>
+                <a class="dropdown-item" href="#aufc">Volkswagen </a>
+                <a class="dropdown-item" href="#vofc">Volvo </a>
+              </div>
+
+            </div>
+            </div>
+        </div>
+<script>
+
+function show_hide () {
+  var click = document.getElementById ("drpdown");
+  if (click.style.display ==="none") {
+      click.style.display = "block" ;
+  } else {
+    click.style.display = "none" ;
+  }
+
+}
+</script>
+</body>

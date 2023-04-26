@@ -1,0 +1,1078 @@
+
+
+    <style>
+        /*faq style start*/
+        .accordion-header-wrapper {
+            width: 100%;
+            display: block;
+            background-color: white;
+        }
+        h2.accordion-header {
+            text-align: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            
+        }
+        h1.faq-title {
+
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(241, 241, 241);
+            font-weight: 800;
+            font-size: 54px;
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 80px;
+            letter-spacing: 7px;
+            line-height: 30px;
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.671)!important;
+            -webkit-text-stroke: 2px rgb(0, 0, 0);
+            margin-bottom: -30px;
+
+        }
+        .banner-bg {
+            text-align: center;
+            background-image: url("{{media url="wysiwyg/banner/painted-bumper-banner-1.jpeg"}}");
+            background-repeat: no-repeat;
+            background-position: contain;
+            background-color: rgba(0, 0, 0, 0.080);
+            background-cover: contain;
+            max-width: 1200px;
+            max-height: 200px;
+            z-index: 0;
+            display: flex-block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                    }
+
+        .con1 {
+            height: 100%;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        ul.nav.nav-tabs {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            border-bottom: 0px!important;
+
+        }
+        button.tab-btn {
+            margin-left: 2.5px;
+            margin-right: 2.5px;
+            background-color: #f4c715 !important;
+            color: #242424 !important;
+            font-weight: 600 !important;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+                    .button-background {
+                    background-color: #d3d3d360;
+                    box-shadow: inset -12px -8px 40px #ffffff54;
+
+                    }
+        .btn-custom {
+            width: 250px !important;
+        }
+        button.tab-btn:hover {
+            background-color: #ffd72f !important;
+        }
+        li button.tab-btn:focus {
+            color: #242424 !important;
+            background-color: #ffd72f !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            border: 2px solid rgb(255, 255, 255)!important;
+        }
+        .cancel-request-btn {
+            color: #242424!important;
+            background-color: #f4c715 !important;
+            font-weight: 600!important;
+            text-align: center!important;
+            margin-left: auto!important;
+            margin-right: auto!important;
+
+        }
+        .cancel-request-btn:focus {
+            color: #242424 !important;
+            background-color: #ffd72f !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+        }
+        .cancel-request-btn:hover {
+            color: #242424!important;
+            background-color: #ffd72f !important;
+
+        }
+        .cancel-request-btn a:hover {
+            color: #242424 !important;
+        }
+        .map_canvas {
+            display: flex;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .map-frame {
+            flex: 3 1 0;
+        }
+        ul.nav.nav-tabs>li {
+            padding: 6px;
+        }
+        .card-header {
+            border-right: 0px !important;
+            border-left: 0px !important;
+            background-color: #fff;
+            color: #242424;
+        }
+        .tab-content {
+            border: 0 !important;
+        }
+        .card-body {
+            font-size: 16px;
+            margin: 0 5px 0 5px;
+        }
+        .trackingbtn {
+            width: 250px;
+            background-color: #f4c715 !important;
+            color: #242424 !important;
+            font-weight: 600 !important;
+        }
+        .trackingbtn a {
+            color: #242424 !important;
+        }
+        .trackingbtn a:hover {
+            background-color: #ffd72f !important;
+        }
+        .trackingbtn:hover {
+            background-color: #ffd72f !important;
+        }
+        .card>.card-header a::before {
+            font-family: FontAwesome;
+            content: "\f061";
+            font-size: 18px;
+            font-weight: 500;
+            color: #f4c715;
+            float: right;
+            margin-left: 5px;
+        }
+        .card>.card-header a:not(.collapsed)::before {
+            font-family: FontAwesome;
+            content: "\f062";
+            font-size: 18px;
+            font-weight: 500;
+            color: #f4c715;
+            float: right;
+            margin-left: 5px;
+
+        }
+        .card-header p {
+            color: #242424;
+        }
+        .card-header:hover {
+            background-color: #ebebeb91;
+        }
+        .amform-parent {
+            width: 250px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .amform-parent button.action.primary {
+            font-size: 14px!important;
+        }
+        .fypc-btn-dt {
+            padding: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 250px !important;
+            text-align: center !important;
+            background-color: #f4c715 !important;
+            font-weight: 600 !important;
+        }
+        .fypc-btn-dt:hover {
+            background-color: #ffd72f!important;
+        }
+        .dt-fypc-button {
+            width: 250px;
+        }
+        .dt-fypc-button a {
+            color: #242424 !important;
+
+        }
+        .dt-fypc-button:hover {
+            background-color: #ffd72f !important;
+        }
+        .mobileShow {
+            display: none;
+        }
+        .mobileHide {
+            display: inline;
+        }
+
+        /*for phone only*/
+        @media screen and (max-width: 360px) {
+            .con1 {
+                margin-top: -20px;
+            }
+            h1.faq-title {
+                font-size: 28px;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.712)!important;
+                -webkit-text-stroke: 1.5px #000;
+
+            }
+            .banner-bg {
+                background-image: url("{{media url="wysiwyg/banner/painted-bumper-banner-square.jpeg"}}");
+                background-repeat: no-repeat;
+                background-size: contain;
+                max-width: 545px;
+                max-height: 443px;
+                z-index: 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 6px;
+            }
+            #trouble {
+                font-weight: 600;
+                font-size: 15px!important;
+            }
+        }
+        @media screen and (min-width: 361px) and (max-width: 700px) {
+            .con1 {
+                margin-top: -20px;
+            }
+            h1.faq-title {
+                font-size: 28px;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.712)!important;
+                -webkit-text-stroke: 1.5px #000;
+
+            }
+            .banner-bg {
+                background-image: url("{{media url="wysiwyg/banner/painted-bumper-banner-square.jpeg"}}");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 100%;
+                max-height: 100%;
+                z-index: 0;
+                display: block;
+                border-radius: 6px;
+            }
+            #trouble {
+                font-weight: 600;
+                font-size: 15px!important;
+            }
+        }
+    </style>
+
+
+<body>
+    <div class="con1">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="banner-bg">
+                        <div class="banner-bg-overlay">
+                    <h1 class="faq-title">Frequently Asked Questions</h1>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="button-background">
+                            <ul class="nav nav-tabs justify-content-center">
+                                <li><button class="tab-btn btn-custom active" data-toggle="tab" href="#tab1"
+                                        aria-selected="true">General
+                                        Questions</button>
+                                </li>
+                                <li><button class="tab-btn btn-custom" data-toggle="tab" href="#tab3" aria-selected="false">Our
+                                        Painting Process</button></li>
+                                <li><button class="tab-btn btn-custom" data-toggle="tab" href="#tab2" aria-selected="false">Shipping
+                                        & Turnaround Time</button>
+                                </li>
+                                <li><button class="tab-btn btn-custom" data-toggle="tab" href="#tab4" aria-selected="false">Orders</button>
+                            </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li><button class="tab-btn btn-custom active" data-toggle="tab" href="#tab1"
+                            aria-selected="true">General
+                            Questions</button>
+                    </li>
+                    <li><button class="tab-btn btn-custom" data-toggle="tab" href="#tab3" aria-selected="false">Our
+                            Painting Process</button></li>
+                    <li><button class="tab-btn btn-custom" data-toggle="tab" href="#tab2" aria-selected="false">Shipping
+                            & Turnaround Time</button>
+                    </li>
+                </ul>
+            </div>
+        </div>-->
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                        <div class="accordion" id="accordion1">
+                            <div class="accordion-header-wrapper">
+                            <h2 class="accordion-header">General Questions</h2>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="genOne">
+                                    <a href="#collapseOne" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <p class="mb-0">
+                                            Where are you located?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="genOne"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        <p style="text-align:center; font-size: 16px; ">We are located in Grand
+                                            Rapids, Michigan, near the downtown area. To learn about local pick
+                                            up
+                                            options, please select "Local Pickup" during the checkout process or please
+                                            contact us
+                                            at
+                                            <br /> <a href="mailto:support@mbiauto.com">support@mbiauto.com</a>,
+                                            by phone <a href="tel:616-334-6200">616-334-6200</a> or by <a style="font-weight: 600; color: #f4c715;" onclick="Tawk_API.toggle()" href="" class="ignore-click">Live Chat</a>
+                                        </p>
+
+                                        <div class="map_canvas"><iframe class="map-frame" style="border: 0;"
+                                                tabindex="0"
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1460.2720712759449!2d-85.69449894174467!3d42.94573625816385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819ae0533321f35%3A0x7982f3194f356dcb!2sMBI%20Auto!5e0!3m2!1sen!2sus!4v1609954673959!5m2!1sen!2sus"
+                                                width="" height="" frameborder="0" allowfullscreen="allowfullscreen"
+                                                aria-hidden="false"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- close card-->
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genTwo">
+                                    <a href="#collapseTwo" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <p class="mb-0 accordion-toggle">Do you offer a military discount for
+                                            veterans or active
+                                            duty?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="genTwo"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        We greatly appreciate your service, but unfortunately we do not
+                                        currently
+                                        offer any special discounts on our items at this time. However, you may
+                                        sign up for our newsletter to stay in the loop on future discounts and
+                                        sales.
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+                            <div class="card">
+                                <div class="card-header collapsed" id="genThree">
+                                    <a href="#collapseThree" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <p class="mb-0 accordion-toggle">Where can I find my paint code?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="genThree"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        The most common place to find your paint code is on a sticker inside
+                                        your
+                                        drivers door jamb OR inside your glovebox compartment. If you cannot
+                                        locate
+                                        that, you can always call your local dealership with your VIN number and
+                                        they will be able to decode it and provide your paint code for you, or you may view our guide via the link below. <br>
+                                        <div class="fypc-btn-dt">
+                                            <button class="mobileHide dt-fypc-button" style="text-align: center;"
+                                                href="locate-your-paint-code" target="popup"
+                                                onclick="window.open('locate-your-paint-code/', 'popup','width=600,height=600'); return false;"><a><i
+                                                        class="fa fa-arrow-right dt" aria-hidden="true"></i>&nbsp;Find
+                                                    your
+                                                    paint code&nbsp;<i class="fa fa-arrow-left dt"
+                                                        aria-hidden="true"></i></a></button>
+                                        </div>
+                                        <div class="fypc-btn-mb">
+                                            <button class="mobileShow mb-fypc-button" style="text-align: center;"
+                                                target="_blank"><a href="locate-your-paint-code" target="_blank"><i
+                                                        class="fa fa-arrow-right mob" aria-hidden="true"></i>&nbsp;Find
+                                                    your
+                                                    paint code&nbsp;<i class="fa fa-arrow-left mob"
+                                                        aria-hidden="true"></i></a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+                            <div class="card">
+                                <div class="card-header collapsed" id="genFour">
+                                    <a href="#collapseFour" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <p class="mb-0 accordion-toggle">Are these OEM parts?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="genFour"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        All of our parts are top of the line OEM comparable aftermarket
+                                        replacement
+                                        parts. We may offer some OEM tailgates please refer to the item details.
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genFour-1">
+                                    <a href="#collapseFour-1" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseFour-1" aria-expanded="false"
+                                        aria-controls="collapseFour-1">
+                                        <p class="mb-0 accordion-toggle">How do your aftermarket parts compare
+                                            to an
+                                            OEM option?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseFour-1" class="collapse" aria-labelledby="genFour-1"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        OEM parts are obtained directly through a dealership and are
+                                        very expensive to source. As a more economical option, we specialize in
+                                        aftermarket body panels. Our parts are insurance quality, aftermarket
+                                        replacements. These are the same quality parts a traditional body shop
+                                        would use to fix your
+                                        vehicle if you were to go directly to them.
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genFive">
+                                    <a href="#collapseFive" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <p class="mb-0 accordion-toggle">Do you have any sales currently or
+                                            offer
+                                            any discounts?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="genFive"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Please subscribe to our newsletter to be one of the first people to hear
+                                        about any future sales or
+                                        discounts. We offer some of the best prices on our parts in the United
+                                        States. If you would like to inquire about bulk or wholesale purchasing, please
+                                        contact Nancy by email at
+                                        &nbsp;<i class="far fa-envelope"></i><a href="mailto:nancy@mbiauto.com">
+                                            &nbsp;nancy@mbiauto.com</a>
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+                            <div class="card">
+                                <div class="card-header collapsed" id="genSix">
+                                    <a href="#collapseSix" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <p class="mb-0 accordion-toggle">Why don't you offer the part I need?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="genSix"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        We strive to keep the most popular parts in our local inventory but if
+                                        you
+                                        do not see the part you need, simply give us a call Monday through Friday
+                                        9am-6pm EST and we will see if we can source your part for you. &nbsp;<i class="fal fa-mobile"></i>&nbsp;<b><a
+                                                href="tel:616-334-6200">616-334-6200</a></b>
+                                        <div style="text-align: center; margin-left: auto; margin-right: auto">
+                                            <span class="quote-btn btn-custom">
+                                                <!-- {{widget type="Amasty\Customform\Block\Init"
+                                                template="Amasty_Customform::init.phtml" form_id="6"}} -->
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div><!-- card-->
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genSeven">
+                                    <a href="#collapseSix-1" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix-1" aria-expanded="false"
+                                        aria-controls="collapseSix-1">
+                                        <p class="mb-0 accordion-toggle">How can I be sure the part I purchase
+                                            will
+                                            fit my vehicle?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix-1" class="collapse" aria-labelledby="genSeven"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Our one of a kind fitment compatibility questionnaire qualifies each
+                                        purchase. <a style="text-decoration: underline;" href="/" target="_blank"> You can use the product finder on
+                                            the
+                                            homepage</a> to verify the item fits your vehicle.
+                                        Make sure the items in the picture that you see is what you need.
+                                        Unfortunately,
+                                        we cannot decode VIN numbers in order to verify fitment or to find your
+                                        paint code.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card-->
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genEight">
+                                    <a href="#collapseSix-2" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix-2" aria-expanded="false"
+                                        aria-controls="collapseSix-2">
+                                        <p class="mb-0 accordion-toggle">Is the hardware needed for installation
+                                            included in my
+                                            order?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix-2" class="collapse" aria-labelledby="genEight"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        There is no hardware included with the purchase on any of our plastic
+                                        bumpers or fenders. Please look closely at the photos included on our
+                                        bumper
+                                        assemblies to see what installation hardware will come with the bumper.
+                                        What
+                                        you see pictured, is what you will expect to be included in the package.
+                                        If
+                                        you need installation hardware, we suggest using a local small parts
+                                        automotive store near you to source those pieces. Some of our tailgates
+                                        are
+                                        sold as complete assemblies and will come ready to install on your truck
+                                        with the hardware in place. Some of our tailgates are sold as just the
+                                        metal
+                                        shell and will require you to transfer your hardware over in order to
+                                        make
+                                        it a working assembly. Please be sure to reference the details and
+                                        photos on
+                                        each listing to ensure you are aware of what option you are purchasing.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genNine">
+                                    <a href="#collapseSix-3" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix-3" aria-expanded="false"
+                                        aria-controls="collapseSix-3">
+                                        <p class="mb-0 accordion-toggle">What if I don’t know my vehicle’s
+                                            specific
+                                            details?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix-3" class="collapse" aria-labelledby="genNine"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        If you are unsure of your vehicle’s specific details, you will need to
+                                        get
+                                        an OEM part number to ensure you are ordering the correct part. An OEM
+                                        part
+                                        number can be obtained by calling a dealership with your VIN number. You
+                                        will need to ask for the part’s department so they can decipher the VIN
+                                        number for you. <i><b>**We are not a dealership and therefore cannot use a
+                                            VIN
+                                            number to assist you in locating the correct part.**</b></i> &nbsp; Once you
+                                        have the OEM
+                                        part number for the body panel piece you are interested in, please
+                                        contact
+                                        us directly for further assistance.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="genTen">
+                                    <a href="#collapseSix-4" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix-4" aria-expanded="false"
+                                        aria-controls="collapseSix-4">
+                                        <p class="mb-0 accordion-toggle">Are your prices negotiable?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseSix-4" class="collapse" aria-labelledby="genTen"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        A variety of factors come into play when figuring out a selling price
+                                        for
+                                        our parts. As a result, we do not accept best offers or negotiate our
+                                        pricing. We strive to keep our prices as low as possible to provide our
+                                        customers with cost friendly replacement options that won’t break the
+                                        bank.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div><!-- accordion-->
+                    </div><!-- tab 1-->
+                    <div id="tab2" class="tab-pane fade">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-header-wrapper">
+                                <h2 class="accordion-header">Shipping & Turnaround Time</h2>
+                                </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipOne">
+                                    <a href="#collapseSeven" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+                                        <p class="mb-0 accordion-toggle">What shipping company do you use?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="shipOne"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        We use multiple shipping carriers including FedEx, R&L Carriers, and
+                                        USPS. We will
+                                        choose the best carrier for your order, depending on the product and the
+                                        shipping class
+                                        chosen. Due to the size of our items, there are NO expedited shipping
+                                        options available.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipTwo">
+                                    <a href="#collapseEight" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        <p class="mb-0 accordion-toggle">What is the difference between Economy
+                                            &
+                                            Premium shipping?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="shipTwo"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        The premium bumper will come with a limited warranty of ten years on the
+                                        paint job itself. It will also arrive with an extra application of clear
+                                        coat. Aside from not being folded for shipping purposes, these are the
+                                        perks
+                                        for purchasing the premium option. The economy version has a 6 month
+                                        warranty on the paint job itself. Since the bumper is shipped with the
+                                        ends
+                                        folded inward, the part will ship for FREE.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipThree">
+                                    <a href="#collapseNine" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        <p class="mb-0 accordion-toggle">How can you ship a bumper cover folded?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseNine" class="collapse" aria-labelledby="shipThree"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Folding a bumper will not change the integrity of the bumper itself. In
+                                        fact, folding a bumper is becoming common practice for all online
+                                        vendors.
+                                        Our company only folds the ends of the bumper inward, this makes the
+                                        package
+                                        smaller and more cost friendly to ship. Plastic is very pliable so once
+                                        a
+                                        folded bumper is received, you just need to set it outside to allow the
+                                        plastic to expand back to its normal shape.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipFour">
+                                    <a href="#collapseTen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        <p class="mb-0 accordion-toggle">What is your handling time?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseTen" class="collapse" aria-labelledby="shipFour"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Any primered (unpainted) or chrome part will be shipped out the same day
+                                        if
+                                        ordered before 12pm EST Monday-Friday.
+                                        Any painted part will have a normal handling time of 2-7 business days
+                                        before it will physically ship from our facility.
+                                        We do NOT ship any orders throughout the weekend, or on Federal holidays.
+                                        <a style="text-decoration: underline;" href="/shipping-and-handling" target="_blank"> View our
+                                            shipping
+                                            &
+                                            handling
+                                            policies in detail</a>.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipFive">
+                                    <a href="#collapseEleven" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseEleven" aria-expanded="false"
+                                        aria-controls="collapseEleven">
+                                        <p class="mb-0 accordion-toggle">How can I track my order?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseEleven" class="collapse" aria-labelledby="shipFive"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        There are a few ways to track the progress of your order. We offer the
+                                        ability to track your orders directly on our website, or you may copy &
+                                        paste your tracking number into Google and track your package directly on the
+                                        shipping carriers website. 
+                                        <div class="trackbutton" style="text-align: center;">
+                                        <button class="trackingbtn" style="text-align: center;"><a href="shippingtracker"><i
+                                                    class="fas fa-shipping-fast" style="padding: 5px;"></i>TRACK
+                                                ORDER</a></button>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipSix">
+                                    <a href="#collapseTwelve" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwelve" aria-expanded="false"
+                                        aria-controls="collapseTwelve">
+                                        <p class="mb-0 accordion-toggle">How long will it take me to receive my
+                                            order? Do you offer
+                                            expedited shipping?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseTwelve" class="collapse" aria-labelledby="shipSix"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Unfortunately, there is no expediting option for our products. It does
+                                        take 3-7 full business days to properly prep,
+                                        paint, fully dry and allow that part to pass through quality control
+                                        before
+                                        shipping out to you. <a style="text-decoration: underline;" href="/shipping-and-handling" target="_blank"> View our
+                                            shipping & handling
+                                            policies in detail</a>.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="shipSeven">
+                                    <a href="#collapseThirteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseThirteen" aria-expanded="false"
+                                        aria-controls="collapseThirteen">
+                                        <p class="mb-0 accordion-toggle">Do you ship outside of the USA?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseThirteen" class="collapse" aria-labelledby="shipSeven"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        We apologize, we only ship within the continental USA. This means we
+                                        cannot
+                                        ship to Hawaii, Alaska, military installments or US Territories.
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- accordion-->
+                    </div><!-- tab2 -->
+
+                    <div id="tab3" class="tab-pane fade">
+                        <div class="accordion" id="accordion3">
+                            <div class="accordion-header-wrapper">
+                                <h2 class="accordion-header">Our Painting Process</h2>
+                                </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="procOne">
+                                    <a href="#collapseFourteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseFourteen" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        <p class="mb-0 accordion-toggle">What kind of paint do you use?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFourteen" class="collapse" aria-labelledby="procOne"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        We use one of the worlds leading OEM automotive coatings on everything
+                                        that
+                                        we paint.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="procTwo">
+                                    <a href="#collapseFifteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseFifteen" aria-expanded="false"
+                                        aria-controls="collapseFifteen">
+                                        <p class="mb-0 accordion-toggle">What is the painting process?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseFifteen" class="collapse" aria-labelledby="procTwo"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        The paint job is of the highest quality; we follow OEM specifications
+                                        for
+                                        painting. We paint all our parts in our new state-of-the-art paint booth
+                                        which greatly enhances our efficiency overall. We apply 3 coats of base
+                                        color and then they are coated with 2 coats of clear coat, before it
+                                        goes
+                                        into the baking tunnel. The parts then pass through our quality control
+                                        inspection before they are shipped out of our facilities.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="procThree">
+                                    <a href="#collapseSixteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSixteen" aria-expanded="false"
+                                        aria-controls="collapseSixteen">
+                                        <p class="mb-0 accordion-toggle">Why do you put powder on the part
+                                            before
+                                            you ship it out?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseSixteen" class="collapse" aria-labelledby="procThree"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        The powder on the bumper is corn starch and we use that to protect the
+                                        fresh paint on the part from getting friction scratches in transit.
+                                        Please
+                                        use a soft dry cloth or pure water to remove the majority of the powder.
+                                        Then you can use
+                                        a damp soft cloth to remove the remaining powder.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="procFour">
+                                    <a href="#collapseSeventeen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseSeventeen" aria-expanded="false"
+                                        aria-controls="collapseSeventeen">
+                                        <p class="mb-0 accordion-toggle">How long should I wait to power
+                                            wash/wax my
+                                            car?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseSeventeen" class="collapse" aria-labelledby="procFour"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        Please do not do any type of pressure washing or waxing on this part for
+                                        at
+                                        least 30 days. The paint will still be fairly soft and does need that
+                                        amount
+                                        of time to fully cure.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div><!-- accordion-->
+                    </div><!-- tab3 -->
+
+
+                    <div id="tab4" class="tab-pane fade">
+                        <div class="accordion" id="accordion4">
+                            <div class="accordion-header-wrapper">
+                                <h2 class="accordion-header">Orders</h2>
+                                </div>
+                             <div class="card">
+                                <div class="card-header collapsed" id="OrderOne">
+                                    <a href="#collapseEightteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseEightteen" aria-expanded="false"
+                                        aria-controls="collapseFourteen">
+                                        <p class="mb-0 accordion-toggle">What is the ordering process?</p>
+                                    </a>
+                                </div>
+                                 <div id="collapseEightteen" class="collapse" aria-labelledby="OrderOne"
+                                    data-parent="#accordion4">
+                                    <div class="card-body">
+                                        <img src="{{media url="Infographic/The_Ordering_Process_v2.1.png"}}" alt="" width="100%" height="100%" style="pointer-events: none;!important, -webkit-touch-callout: none;" />
+                        
+                                    </div>
+                                </div> 
+                            </div> 
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="OrderTwo">
+                                    <a href="#collapseNineteen" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseNineteen" aria-expanded="false"
+                                        aria-controls="collapseNineteen">
+                                        <p class="mb-0 accordion-toggle">Where can I view my past orders?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseNineteen" class="collapse" aria-labelledby="OrderTwo"
+                                    data-parent="#accordion4">
+                                    <div class="card-body">
+                                       <a style="text-decoration: underline;" href="sales/order/history/" target="_blank">You can view your previous orders here,</a> or navigate to your account dashboard via the menu at the top of the page. Creating an user account offers many benefits such as, viewing previous orders, saved payment methods, and save multiple addresses. 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="OrderThree">
+                                    <a href="#collapseTwenty" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwenty" aria-expanded="false"
+                                        aria-controls="collapseTwenty">
+                                        <p class="mb-0 accordion-toggle">Can I cancel my most recent order?
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="collapseTwenty" class="collapse" aria-labelledby="OrderThree"
+                                    data-parent="#accordion4">
+                                    <div class="card-body">
+                                        If you would like to cancel your order, and it has not been longer than 24 hours since the purchase please reach out to us by <a href="tel:6163346200">Phone</a> or <a href="mailto:support@mbiauto.com">Email</a> as soon as you can to ensure proper cancellation of your order.
+                                        <div class="row justify-content-center"><button class="btn-primary cancel-request-btn"><a href="/request-a-cancellation">Request A Cancellation</a></button></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" id="OrderFour">
+                                    <a href="#collapseTwentyOne" class="collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwentyOne" aria-expanded="false"
+                                        aria-controls="collapseTwentyOne">
+                                        <p class="mb-0 accordion-toggle">I never received an email order confirmation, why?</p>
+                                    </a>
+                                </div>
+                                <div id="collapseTwentyOne" class="collapse" aria-labelledby="OrderFour"
+                                    data-parent="#accordion4">
+                                    <div class="card-body">
+                                        Sometimes emails are sent to the spam inbox, please check there. If you can not locate any emails from Bumpers That Deliver, <a style="text-decoration: underline;" href="contact" target="_blank">please reach out to us here</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- accordion-->
+                    </div><!-- tab4 -->
+                </div><!-- tab content-->
+            </div>
+        </div>
+    </div>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where are you located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are located in Grand Rapids, Michigan, near the downtown area. To learn about local pick up options, please select \"Local Pickup\" during the checkout process or please contact us at support@mbiauto.com or by phone 616-334-6200"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer a military discount for veterans or active duty?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We greatly appreciate your service, but unfortunately we do not currently offer any special discounts on our items at this time. However, you may sign up for our newsletter to stay in the loop on future discounts and sales."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can i find my paint code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common place to find your paint code is on a sticker inside your drivers door jamb OR inside your glovebox compartment. If you cannot locate that, you can always call your local dealership with your VIN number and they will be able to decode it and provide your paint code for you."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are these OEM parts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All of our parts are top of the line OEM comparable aftermarket replacement parts. We may offer some OEM tailgates please refer to the item details."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do your aftermarket parts compare to an OEM option?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OEM parts are obtained directly through a dealership and are very expensive to source. As a more economical option, we specialize in aftermarket body panels. Our parts are insurance quality, aftermarket replacements. These are the same quality parts a traditional body shop would use to fix your vehicle if you were to go directly to them."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you have any sales or offer any discounts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Please subscribe to our newsletter to be one of the first people to hear about any future sales or discounts. We offer some of the best prices on our parts in the United States. If you are inquiring about bulk or wholesale purchasing, please contact Nancy by email at    nancy@mbiauto.com"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why don't you offer the part i need?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We strive to keep the most popular parts in our local inventory but if you do not see the part you need, please fill out a quote form to see if we can source the part you need! Or simply give us a call Monday through Friday 9am-6pm EST.   616-334-6200"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can i be sure that the part i purchase will fit my vehicle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our one of a kind fitment compatibility questionnaire qualifies each purchase. You can use the product finder on the homepage to verify the item fits your vehicle. Make sure the items in the picture that you see is what you need. Unfortunately, we cannot decode VIN numbers in order to verify fitment or to find your paint code."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the hardware needed for installation included in my order?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is no hardware included with the purchase on any of our plastic bumpers or fenders. Please look closely at the photos included on our bumper assemblies to see what installation hardware will come with the bumper. What you see pictured, is what you will expect to be included in the package. If you need installation hardware, we suggest using a local small parts automotive store near you to source those pieces. Some of our tailgates are sold as complete assemblies and will come ready to install on your truck with the hardware in place. Some of our tailgates are sold as just the metal shell and will require you to transfer your hardware over in order to make it a working assembly. Please be sure to reference the details and photos on each listing to ensure you are aware of what option you are purchasing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if i don't know my vehicle's specific details?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you are unsure of your vehicle’s specific details, you will need to get an OEM part number to ensure you are ordering the correct part. An OEM part number can be obtained by calling a dealership with your VIN number. You will need to ask for the part’s department so they can decipher the VIN number for you. **We are not a dealership and therefore cannot use a VIN number to assist you in locating the correct part.** Once you have the OEM part number for the body panel piece you are interested in, please contact us directly for further assistance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are your prices negotiable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A variety of factors come into play when figuring out a selling price for our parts. As a result, we do not accept best offers or negotiate our pricing. We strive to keep our prices as low as possible to provide our customers with cost friendly replacement options that won’t break the bank."
+              }
+            }
+          ]
+        }
+        </script>
+</body>

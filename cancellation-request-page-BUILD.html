@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<title>.</title>
+<style>
+    @media screen and (min-width: 1000px) {
+.amazon-alert {
+    font-size: 14px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.cancel-header {
+    text-align: center;
+}
+#amform-form-13 {
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+    }
+    .cancellation-p {
+        color: #919191;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 368px) {
+    .cancellation-p {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .cancel-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+}
+</style>
+</head>
+<body>
+    <div class="alert alert-danger amazon-alert" role="alert">
+        <b>Amazon & eBay Customers:</b> We would love to assist you. However, if you have placed an order on Amazon or eBay you must contact us through those platforms to receive assistance with an eBay or Amazon order. Thank You.
+    </div>
+
+    <h1 class="cancel-header">Request A Cancellation</h1>
+
+    <p class="cancellation-p">We are sorry to see that you want to cancel your order. We will do our best to acommodate your request. <br><br> Cancellation requests are not guaranteed for orders placed more than 24 hours ago. We will do our best to acommodate every cancellation request. With that said, if you would still like to request a cancellation, please fill out the form below and one of our representatives will reach out to you to confirm cancellation.</p>
+    <div class="cancellation-form-container">
+        <p style="text-align: center; font-size: 12px; color: #1d1d1d"><a href="/returns">For more information you may view our cancelletion policy here.</a></p>
+
+           {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="142"}}
+    </div>
+
+
+</body>

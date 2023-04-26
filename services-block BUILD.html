@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+    <style>
+        .row.three-columns {
+            text-align: center;
+        }
+        .box {
+            margin: 0 auto;
+            display: flex;
+            max-width: 400px;
+            margin-right: 5px;
+            max-height: 100px;
+            border: 0px solid rgb(90, 90, 90);
+        }
+
+        .icon-t {
+            margin: 5px 10px 0 0;
+            display: inline;
+            font-size: 36px;
+            --fa-primary-color: #f4c715;
+            --fa-secondary-color: #242424;
+            --fa-secondary-opacity: .8;
+
+        }
+
+        .box h4 {
+            float: right;
+            display: inline;
+
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: 700;
+
+        }
+
+        .box h4 a {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row three-columns">
+        <div class="col-lg-4 box" id="box1"><i class="fad fa-shipping-fast icon-t"></i>
+            <h4>fast shipping</h4>
+        </div>
+        <div class="col-lg-4 box" id="box2"><i class="fad fa-search icon-t"></i>
+            <h4><a href="/">&nbsp;find your part</a></h4>
+        </div>
+        <div class="col-lg-4 box" id="box3"><i class="fad fa-car-crash icon-t"></i>
+            <h4>save on repairs</h4>
+        </div>
+    </div>
+
+</body>

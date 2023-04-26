@@ -1,0 +1,269 @@
+
+    <style>
+        .shrwrapper {
+            display: flex;
+            border: 0 solid #000;
+            padding-right: 0;
+            padding-left: 0
+        }
+
+        .shrbox1 {
+            border: 0 solid rgba(0, 0, 0, .178);
+            margin-right: 20px;
+            flex: 1 1 0
+        }
+
+        .shrbox2 {
+            border: 0 solid #000;
+            margin-left: 20px;
+            flex: 1 1 0
+        }
+
+        .shrbox1-1 {
+            border: 0 solid #000;
+            margin: 5px;
+            padding: 10px
+        }
+
+        .shrbox1-2 {
+            border: 0 solid #000;
+            margin: 5px;
+            padding: 10px
+        }
+
+        .fold-1 {
+            color: red;
+            font-size: 14px
+        }
+
+        .shrheader {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 0;
+            position: relative;
+            text-align: center
+        }
+
+        .shrsubhead {
+            font-weight: 650;
+            text-align: center;
+            font-size: 28px;
+            color: #000
+        }
+
+        .tax-col {
+            font-size: 11px;
+            margin-top: 250px
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1em;
+            background: rgba(0, 0, 0, .562)
+        }
+
+        .lightbox:target {
+            display: block
+        }
+
+        .lightbox span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain
+        }
+
+        .map1 {
+            width: 500px;
+            height: 500px
+        }
+
+        .vert-lin {
+            width: 3px;
+            height: 700px;
+            border: none;
+            border-left: 2px dashed #f4c715
+        }
+
+        .shrliststy li {
+            font-size: 14px;
+            text-align: center;
+            list-style-type: circle;
+            list-style-position: inside
+        }
+        .shrtime li {
+            font-size: 14px;
+            text-align: justify;
+            list-style-type: circle;
+            list-style-position: inside
+
+        }
+
+        .costwill,
+        .fold-1 {
+            text-align: center
+        }
+        .tap-off1 {
+            color: #242424;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        @media only screen and (min-width:800px) {
+            .mobileShow {
+                display: none
+            }
+
+            .mobileHide {
+                color: #f4c715;
+                font-size: 24px;
+                display: inline;
+                font-weight: 900
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            .shrwrapper {
+                flex-direction: column;
+                padding: 0
+            }
+            .shrtime {
+                text-align: justify;
+            }
+            .shrtime li {
+
+            }
+
+            .shrbox2 {
+                margin-right: auto;
+                margin-left: auto
+            }
+
+            .shrsubhead {
+                font-size: 18px
+            }
+
+            .mobileHide {
+                display: none
+            }
+
+            .mobileShow {
+                font-size: 24px;
+                color: #f4c715;
+                font-weight: 900
+            }
+
+            .shrliststy li {
+                text-align: center
+            }
+
+            .vert-lin {
+                display: none
+            }
+
+            .tax-col {
+                margin-left: 10px;
+                margin-right: auto;
+                text-align: center;
+                margin-top: 10px
+            }
+            #tap-off2.mobileShow {
+                text-align: center!important;
+            }
+        }
+    </style>
+
+
+<body>
+    <div class="shrwrapper">
+        <div class="shrbox1">
+            <!--<h2 class="shrheader">Shipping & Handling</h2>-->
+            <h3 class="shrsubhead">Order Handling & Delivery Time Estimates</h3>
+            <br>
+            <hr>
+            <h2 class=""></h2>
+            <ul class="shrtime">
+                <li>Orders are shipped with FedEx, R+L Carriers, or USPS from Grand Rapids, MI or Phoenix, AZ.</li>
+                <li>Handling time for unpainted parts is 1-2 business days. Delivery time is approximately 2-7 days.
+                </li>
+                <li>Handling time for painted parts is 5 business days. Delivery time is approximately 2-7 business days
+                    <i>after</i>
+                    your order leaves our facility.</li>
+                <li>Most unpainted and folded bumpers ship for free.</li>
+                <li>Economy plastic bumpers are <b><i>FOLDED</i></b></li>
+                <li>Premium plastic bumpers are <b><i>NOT FOLDED</i></b></li>
+                <li>Most small items such as Ready To Spray Paint ship for free via USPS</li>
+                <li>Most steel bumpers ship for free.</li>
+                <li>Tailgates ship for free</li>
+            </ul>
+            <br>
+            <p class="" style="text-align: justify;">The available shipping options are <i>Economy</i> & <i>Premium.</i> These are defined solely by
+                the price, the way it is packaged, and which carrier we use. Most <i>folded</i> plastic bumpers ship for
+                free.</p>
+            <br>
+            <p class="tax-col">Delivery dates & timeframes are estimates made by the shipping carrier. National
+                emergencies, weather events, and unforseen circumstances across the country can affect delivery
+                times on rare occasions.
+                Taxes are automatically collected for cities, counties, and states that
+                mandate online sales tax.
+                Shipping cost are subject to change at any time at our own discretion.</p>
+        </div>
+        <hr class="vert-lin">
+        <div class="shrbox2">
+            <hr class="mobishow d-block d-sm-none">
+
+            <h3 class="shrsubhead">Premium Shipping Cost</h3>
+            <br>
+            <hr class="mobihide d-none d-lg-block">
+            <div class="shrbox2-2">
+                <div class="list-c">
+                    <div class="shrbox2-1">
+                        <a name="premium-shipping">
+                            <div class="list-c">
+                                <p class="costwill"> <em style="font-size: 14px; color: #000; font-weight: 900">COST
+                                        WILL VARY BASED ON
+                                        YOUR
+                                        LOCATION</em></p>
+
+                                <ul class="shrliststy">
+                                    <li><b>Zone 1:</b> Approximately <b>$120.99</b> added shipping cost</li>
+                                    <li><b>Zone 2:</b> Approximately <b>$150.99</b> added shipping cost</li>
+                                    <li><b>Zone 3:</b><span style="color:#d40202">*</span> Approximately <b>$220.99</b>
+                                        added shipping cost</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <p class="fold-1">**Bumpers shipped with our Premium shipping class are <b>NOT FOLDED</b>**.
+                    </p>
+                    <a href="#map1">
+                        <img src="{{media url="wysiwyg/maps/Shipping-Zones-Map_1.jpg"}}" alt="shipping-zones-map" width="100%"
+                            height="100%"></a>
+
+                    <a href="#premium-shipping" class="lightbox" id="map1">
+                        <span style="background-image: url('{{media url="wysiwyg/maps/Shipping-Zones-Map_1.jpg"}}')"
+                            aria-hidden="true" aria-label="close">
+
+                            <div class="mobileHide" id="tap-off1"><p class="tap-off1">CLICK ANYWHERE TO CLOSE THE MAP</p></div>
+                            <div class="mobileShow" id="tap-off2"><p class="tap-off2" style="text-align: center;">TAP ANYWHERE TO CLOSE THE MAP</p></div>
+                        </span>
+                    </a>
+                    <p class="fold-1">*Michigans Upper Peninsula, New York City & The Long Island area are apart of Zone
+                        3 due to carrier
+                        restrictions*</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

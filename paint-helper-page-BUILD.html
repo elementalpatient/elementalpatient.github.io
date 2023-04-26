@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<head>
+	<title>.</title>
+	<style>
+		#pnt-cont {
+			display: flex;
+			border: 0 solid #000;
+			max-width: 1200px
+		}
+
+		.m-cont {
+			margin-right: 0 auto !important;
+			padding: 10px;
+			padding-bottom: 50px;
+			border-bottom: 2px solid #000;
+			text-align: center;
+			float: center;
+			font-size: 18px;
+		}
+
+		.mcont {
+			max-width: 1200px
+		}
+
+		.dt-head {
+			font-weight: 600;
+			color: #000;
+			font-size: 26px;
+			margin-top: 75px;
+			margin-left: 15px
+		}
+
+		.custom-class {
+			display: flex
+		}
+
+		.dtCont {
+			color: #666;
+			font-size: 20px;
+			padding: 20px
+		}
+
+		.left-img {
+			float: left;
+			margin: 25px
+		}
+
+		.right-img {
+			float: right;
+			margin: 25px
+		}
+
+		.pnt-h1 {
+			text-align: center;
+			color: #1d1d1d
+		}
+
+		.mobileHide {
+			display: inline
+		}
+
+		.mobileShow {
+			display: none
+		}
+
+		#benz-img,
+		#subaru-img {
+			padding-top: 85px
+		}
+
+		@media only screen and (max-width:420px) {
+			.mobileShow {
+				display: inline
+			}
+
+			.mobileHide {
+				display: none
+			}
+
+			#pnt-cont {
+				border: 0 solid #000;
+				max-width: 500px
+			}
+
+			img.right-img {
+				width: 275px;
+				height: 275px;
+				padding: 0;
+				text-align: center !important;
+				float: none
+			}
+
+			img.left-img {
+				width: 275px;
+				height: 275px;
+				padding: 0;
+				text-align: center !important;
+				float: none
+			}
+
+			.pnt-h1 {
+				font-size: 28px;
+				text-align: center;
+				color: #1d1d1d;
+				padding-bottom: 40px
+			}
+
+			.mobi-head {
+				font-weight: 600;
+				margin-top: 10px;
+				font-size: 24px;
+				color: #000;
+				vertical-align: top;
+				text-align: center
+			}
+
+			.mobCont {
+				color: #666 !important;
+				margin-bottom: 0;
+				padding-bottom: 10px
+			}
+		}
+
+		@media screen and (min-width:301px) and (max-width:750px) {
+			.mobileShow {
+				display: inline
+			}
+
+			.mobileHide {
+				display: none
+			}
+
+			#pnt-cont {
+				border: 0 solid #000;
+				max-width: 750px
+			}
+			.m-cont {
+				padding: 0px 0px 10px 0px;
+				font-size: 16px;
+			}
+
+			img.right-img {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width: 300px;
+				height: 300px;
+				padding: 0;
+				float: none
+			}
+
+			img.left-img {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				width: 300px;
+				height: 300px;
+				padding: 0;
+				text-align: center !important;
+				float: none
+			}
+
+			.pnt-h1 {
+				font-size: 24px!important;
+				text-align: center;
+				color: #1d1d1d;
+				padding-bottom: 40px
+			}
+
+			.mobi-head {
+				font-weight: 600;
+				margin-top: 10px;
+				font-size: 18px;
+				color: #000;
+				vertical-align: top;
+				text-align: center
+			}
+
+			.mobCont {
+				color: #666 !important;
+				margin-bottom: 0;
+				padding-bottom: 10px;
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container" id="pnt-head">
+		<div class="row justify-content-center">
+			<div class="col-md-12 mcont">
+				<h1 class="pnt-h1">Where To Find Your Paint Code</h1>
+				<p class="m-cont">Be careful when using the internet to decipher your paint code. Most websites that
+					say they
+					can accurately match your code, are matching it to the paint name. That information may not be
+					correct. Paint names are frequently reused, and can be used by multiple manufacturers. The most
+					accurate method of finding your paint code is by calling a local dealership and providing them with
+					your VIN #. OEM dealerships are the only ones outside of the
+					manufacturer that can accurately decode VIN #'s, because they have direct access to vehicle specific
+					build sheets.</p>
+
+			</div>
+
+		</div>
+	</div>
+	<br>
+	{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="128"}}
+
+	<br>
+	<div class="container" id="pnt-cont">
+		<div class="row custom-class">
+			<a name="gmfc"></a>
+			<div class="col-md-6 mobileShow" id="gm-cont-mob">
+				<h3 class="mobi-head">GM - Buick, Cadillac, Chevrolet, GMC</h3><br>
+				<p class="mobCont">Most commonly found in the drivers side door jamb on an information sticker similar
+					to what
+					you see below.
+					GM paint codes are displayed in a few different ways, but can be interpreted the same. These
+					can be between 5 and 6-digits.
+					Ex: WA926L, U926L, and 926L are the same paint code. Your paint code may also be located
+					next to "BC/CC" on the service parts label. This simply stands for BASECOAT/CLEARCOAT.</p>
+			</div>
+
+			<div class="col-md-6 mobileHide" id="gm-cont">
+				<h3 class="dt-head">GM - Buick, Cadillac, Chevrolet, GMC</h3><br>
+				<p class="dtCont">Most commonly found in the drivers side door jamb on an information sticker similar to
+					what
+					you see pictured.
+					GM paint codes are displayed in a few different ways, but can be interpreted the same. These
+					can be between 5 and 6-digits.
+					Ex: WA926L, U926L, and 926L are the same paint code. Your paint code may also be located
+					next to "BC/CC" on the service parts label. This simply stands for BASECOAT/CLEARCOAT.</p>
+			</div>
+			<div class="col-md-6" id="gm-img"><img class="right-img" src="pub/media/wysiwyg/paint-help/gm-pc.png"
+					width="400px" height="400px" /></div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="fofc"> </a>
+
+			<div class="col-md-6 mobileShow" id="ford-cont-mob">
+				<h3 class="mobi-head">Ford Motor Co. - Ford, Lincoln, Mazda, Mercury</h3><br>
+				<p class="mobCont">The paint code for most Ford manufactured vehicles is usually displayed
+					inside the drivers side door jamb, on a vehicle information sticker and is a 2-digit code.
+					Ex: D3, AQ, ZY, T5. Can be displayed as "EXT PNT: ##" or "## EXTERIOR PAINT".</p>
+			</div>
+			<div class="col-md-6" id="ford-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/ford-pc.jpg"
+					width="400px" height="400px" /></div>
+			<div class="col-md-6 mobileHide" id="ford-cont">
+				<h3 class="dt-head">Ford Motor Co. - Ford, Lincoln, Mazda, Mercury</h3><br>
+				<p class="dtCont">The paint code for most Ford manufactured vehicles is usually displayed
+					inside the drivers side door jamb, on a vehicle information sticker and is a 2-digit code.
+					Ex: D3, AQ, ZY, T5. Can be displayed as "EXT PNT: ##" or "## EXTERIOR PAINT".</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="mofc"></a>
+			<div class="col-md-6 mobileShow" id="dodge-cont-mob">
+				<h3 class="mobi-head">Fiat Chrysler Automobiles - Chrysler, Dodge, Jeep, RAM, Fiat</h3><br>
+				<p class="mobCont"> Located on various different parts of the vehicle, Chrysler/Dodge/Jeep/RAM
+					paint codes are 3-digits typically prefixed by the letter P. Ex: PSB, PS2, PW7 | Fiat paint
+					codes can range from 3 to 4-digits and are similar to the rest of the Chrysler lineup. Ex:
+					268A, PW3, JRP.</p>
+			</div>
+
+			<div class="col-md-6 mobileHide" id="dodge-cont">
+				<h3 class="dt-head">Fiat Chrysler Automobiles - Chrysler, Dodge, Jeep, RAM, Fiat</h3><br>
+				<p class="dtCont"> Located on various different parts of the vehicle, Chrysler/Dodge/Jeep/RAM
+					paint codes are 3-digits typically prefixed by the letter P. Ex: PSB, PS2, PW7 | Fiat paint
+					codes can range from 3 to 4-digits and are similar to the rest of the Chrysler lineup. Ex:
+					268A, PW3, JRP.</p>
+			</div>
+			<div class="col-md-6" id="dodge-img"><img class="right-img" src="pub/media/wysiwyg/paint-help/dodge-pc.jpg"
+					width="400px" height="400px" /></div>
+		</div>
+	</div>
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="hofc"></a>
+			<div class="col-md-6 mobileShow" id="honda-cont-mob">
+				<h3 class="mobi-head">Honda Motor Co - Acura and Honda</h3><br>
+				<p class="mobCont">Like other manufacturers, Honda generally displays their paint codes on an
+					information sticker on the drivers side door frame. These codes are usually 4 to 7-digits
+					long and can be prefixed by 2 letters such as "YR- or NH-" and suffixed with a single letter
+					such as P or M. Ex: NH-624P, NH638M, NH578, Y-71M, B92P, BG-57P, and so on.</p>
+			</div>
+			<div class="col-md-6" id="honda-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/honda-pc.jpg"
+					width="400px" height="400px" /></div>
+			<div class="col-md-6 mobileHide" id="honda-cont">
+				<h3 class="dt-head">Honda Motor Co - Acura and Honda</h3><br>
+				<p class="dtCont">Like other manufacturers, Honda generally displays their paint codes on an
+					information sticker on the drivers side door frame. These codes are usually 4 to 7-digits
+					long and can be prefixed by 2 letters such as "YR- or NH-" and suffixed with a single letter
+					such as P or M. Ex: NH-624P, NH638M, NH578, Y-71M, B92P, BG-57P, and so on.</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="nifc"></a>
+			<div class="col-md-6 mobileShow" id="nissan-cont-mob">
+				<h3 class="mobi-head">Nissan Motor Co - Infiniti, Nissan, Mitsubishi</h3><br>
+				<p class="mobCont">Nissan also displays their paint codes inside the drivers side door jamb,
+					and on some occasions under the hood on the firewall, or right in front on the radiator
+					support information sticker.
+					All Nissan paint codes are 3-digits long containing both letters and numbers. Ex: KH3, 031,
+					40A, KAD.</p>
+			</div>
+
+
+			<div class="col-md-6 mobileHide" id="nissan-cont">
+				<h3 class="dt-head">Nissan Motor Co - Infiniti, Nissan, Mitsubishi</h3><br>
+				<p class="dtCont">Nissan also displays their paint codes inside the drivers side door jamb,
+					and on some occasions under the hood on the firewall, or right in front on the radiator
+					support information sticker.
+					All Nissan paint codes are 3-digits long containing both letters and numbers. Ex: KH3, 031,
+					40A, KAD.</p>
+			</div>
+			<div class="col-md-6" id="nissan-img"><img class="right-img"
+					src="pub/media/wysiwyg/paint-help/nissan-pc.jpg" width="400px" height="400px" /></div>
+		</div>
+	</div>
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="tofc"></a>
+			<div class="col-md-6 mobileShow" id="toyota-cont-mob">
+				<h3 class="mobi-head">Toyota Motor Corp. - Toyota, Lexus, Scion</h3><br>
+				<p class="mobCont"> Toyota & Lexus paint codes are displayed in a very similar fashion to other
+					manufacturers, inside the driver side door jamb on the vehicle information sticker. Most
+					commonly found next to "C/TR:" which stands for "Color / Trim". Toyota paint codes are
+					almost always 3-digits. Ex: 1C0, 1D6, 202, 040.</p>
+			</div>
+
+			<div class="col-md-6" id="toyota-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/toyota-pc.png"
+					width="400px" height="400px" /></div>
+
+			<div class="col-md-6 mobileHide" id="toyota-cont">
+				<h3 class="dt-head">Toyota Motor Corp. - Toyota, Lexus, Scion</h3><br>
+				<p class="dtCont">Toyota & Lexus paint codes are displayed in a very similar fashion to other
+					manufacturers, inside the driver side door jamb on the vehicle information sticker. Most
+					commonly found next to "C/TR:" which stands for "Color / Trim". Toyota paint codes are
+					almost always 3-digits. Ex: 1C0, 1D6, 202, 040.</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="bmfc"></a>
+			<div class="col-md-6 mobileShow" id="bmw-cont-mob">
+				<h3 class="mobi-head">BMW Group - BMW, Mini</h3><br>
+				<p class="mobCont">Most BMW's will have their paint code located on the sticker under the hood on the
+					drivers side, or on the drivers side strut tower. Mini's display their paint code on the passenger
+					side under the hood on the firewall, or the passenger side strut tower. BMW & Mini paint codes are
+					usually 3-digits and can be a mix of letters and numbers. Ex: 354, 896, A52, A76 </p>
+			</div>
+
+
+			<div class="col-md-6 mobileHide" id="bmw-cont">
+				<h3 class="dt-head">BMW Group - BMW, Mini</h3><br>
+				<p class="dtCont">Most BMW's will have their paint code located on the sticker under the hood on the
+					drivers side, or on the drivers side strut tower. Mini's display their paint code on the passenger
+					side under the hood on the firewall, or the passenger side strut tower. BMW & Mini paint codes are
+					usually 3-digits and can be a mix of letters and numbers. Ex: 354, 896, A52, A76 </p>
+			</div>
+			<div class="col-md-6" id="bmw-img"><img class="right-img" src="pub/media/wysiwyg/paint-help/bmw-pc.jpg"
+					width="400px" height="400px" /></div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="aufc"></a>
+			<div class="col-md-6 mobileShow" id="audi-cont-mob">
+				<h3 class="mobi-head">Volkswagen Group - Audi, Volkswagen</h3><br>
+				<p class="mobCont"> All Audi & Volkswagen vehicles have their paint codes displayed in one of a few
+					locations within the
+					vehicles trunk. Some of the possible locations within the trunk are: Under the trunk deck lid,
+					inside the rear compartment, under the mat, or on the spare tire wheel well. Audi & Volkswagen paint
+					codes vary in length from 2-4 digits. Some of the variants are: 4015, LY7G, 2T, Q4SF. </p>
+			</div>
+
+			<div class="col-md-6" id="audi-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/audi-pc.png"
+					width="400px" height="400px" /></div>
+
+			<div class="col-md-6 mobileHide" id="audi-cont">
+				<h3 class="dt-head">Volkswagen Group - Audi, Volkswagen</h3><br>
+				<p class="dtCont">All Audi & Volkswagen vehicles have their paint codes displayed in one of a few
+					locations within the
+					vehicles trunk. Some of the possible locations within the trunk are: Under the trunk deck lid,
+					inside the rear compartment, under the mat, or on the spare tire wheel well. Some of the variants
+					are: 4015, LY7G, 2T, Q4SF.</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="mbfc"></a>
+			<div class="col-md-6 mobileShow" id="benz-cont-mob">
+				<h3 class="mobi-head">Daimler AG - Mercedes-Benz, Smart</h3><br>
+				<p class="mobCont">Mercedes-Benz vehicles will display their paint code in 3 different places, depending
+					on the model. The three most common locations you can find your Mercedes-Benz paint code are in the
+					drivers side door jamb, under the hood on the upper radiator support, or on the underside of the
+					hood. Mercedes-Benz paint codes are 3-digits long and contain only numbers. Older paint codes may be
+					prefixed by DB. Ex: 723, DB-143, 147, 040. <br><br>
+					Smart car paint codes will vary in length and composition relative to the vehicles year and model.
+					These codes can range from 3-4 digits and are usually located on the vehicles firewall under the
+					hood, drivers side door jamb, or the vehicles trunk lid. Ex: 9696, C46L, EA4. </p>
+			</div>
+
+
+			<div class="col-md-6 mobileHide" id="benz-cont">
+				<h3 class="dt-head">Daimler AG - Mercedes-Benz, Smart</h3><br>
+				<p class="dtCont">Mercedes-Benz vehicles will display their paint code in 3 different places, depending
+					on the model. The three most common locations you can find your Mercedes-Benz paint code are in the
+					drivers side door jamb, under the hood on the upper radiator support, or on the underside of the
+					hood. Mercedes-Benz paint codes are 3-digits long and contain only numbers. Older paint codes may be
+					prefixed by DB. Ex: 723, DB-143, 147, 040. <br><br>
+					Smart car paint codes will vary in length and composition relative to the vehicles year and model.
+					These codes can range from 3-4 digits and are usually located on the vehicles firewall under the
+					hood, drivers side door jamb, or the vehicles trunk lid. Ex: 9696, C46L, EA4. </p>
+			</div>
+			<div class="col-md-6" id="benz-img"><img class="right-img" src="pub/media/wysiwyg/paint-help/benz-pc.jpg"
+					width="400px" height="400px" /></div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="kifc"></a>
+			<div class="col-md-6 mobileShow" id="kia-cont-mob">
+				<h3 class="mobi-head">Hyundai Motor Co. - Kia, Hyundai</h3><br>
+				<p class="mobCont"> All Hyundai & Kia vehicles will display their paint code inside the drivers side
+					door jamb. On rare occasions you can find the paint code on the vehicles firewall under the hood.
+					These paint codes can range from 2-3 digits. Ex: IM, 2T, FF, SWP, ABT. These instructions apply both
+					to Kia & Hyundai vehicle information stickers, which will display the relevant manufacturers name on
+					the label. </p>
+			</div>
+
+			<div class="col-md-6" id="kia-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/kia-pc.jpg"
+					width="400px" height="400px" />
+			</div>
+
+			<div class="col-md-6 mobileHide" id="kia-cont">
+				<h3 class="dt-head">Hyundai Motor Co. - Kia, Hyundai</h3><br>
+				<p class="dtCont">All Hyundai & Kia vehicles will display their paint code inside the drivers side
+					door jamb. On rare occasions you can find the paint code on the vehicles firewall under the hood.
+					These paint codes can range from 2-3 digits. Ex: IM, 2T, FF, SWP, ABT. These instructions apply both
+					to Kia & Hyundai vehicle information stickers, which will display the relevant manufacturers name on
+					the label.</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="sufc"></a>
+			<div class="col-md-6 mobileShow" id="subaru-cont-mob">
+				<h3 class="mobi-head">Subaru</h3><br>
+				<p class="mobCont"> All Subaru models display their paint code on the label found either on the strut
+					towers under the hood, on the passenger side door jamb, or door edge. Subaru paint codes are
+					typically 3-digits long made up of numbers and letters. Ex: 01W, 24G, 406, 41A. </p>
+			</div>
+
+
+			<div class="col-md-6 mobileHide" id="subaru-cont">
+				<h3 class="dt-head">Subaru</h3><br>
+				<p class="dtCont">All Subaru models display their paint code on the label found either on the strut
+					towers under the hood, on the passenger side door jamb, or door edge. Subaru paint codes are
+					typically 3-digits long made up of numbers and letters. Ex: 01W, 24G, 406, 41A. </p>
+			</div>
+			<div class="col-md-6" id="subaru-img"><img class="right-img"
+					src="pub/media/wysiwyg/paint-help/subaru-pc.jpg" width="400px" height="400px" /></div>
+		</div>
+
+	</div>
+	<hr>
+	<div class="container" id="pnt-cont">
+		<div class="row">
+			<a name="vofc"></a>
+			<div class="col-md-6 mobileShow" id="volvo-cont-mob">
+				<h3 class="mobi-head" style="text-align:center!important">Volvo</h3><br>
+				<p class="mobCont"> The location of Volvo's vehicle information sticker containing the vehicles paint
+					code will vary model to model. Some of the most popular spots to find your Volvo paint code are
+					under the hood on the vehicles firewall, the driver or passenger side strut tower, on top of the
+					radiatior support, or inside of the drivers side door jamb, similar to other manufacturers. Volvo
+					paint codes are comprised of numbers and are usually only 3-digits. Some codes may be suffixed by a
+					- and 2 numbers that are irrelevant to paint matching. Ex: 446-46, the only information you will
+					need for your paint code are the first 3-digits. </p>
+			</div>
+
+			<div class="col-md-6" id="volvo-img"><img class="left-img" src="pub/media/wysiwyg/paint-help/volvo-pc.png"
+					width="500px" height="500px" />
+			</div>
+
+			<div class="col-md-6 mobileHide" id="volvo-cont">
+				<h3 class="dt-head" style="text-align:center!important">Volvo</h3><br>
+				<p class="dtCont"> The location of Volvo's vehicle information sticker containing the vehicles paint
+					code will vary model to model. Some of the most popular spots to find your Volvo paint code are
+					under the hood on the vehicles firewall, the driver or passenger side strut tower, on top of the
+					radiatior support, or inside of the drivers side door jamb, similar to other manufacturers. Volvo
+					paint codes are comprised of numbers and are usually only 3-digits. Some codes may be suffixed by a
+					- and 2 numbers that are irrelevant to paint matching. Ex: 446-46, the only information you will
+					need for your paint code are the first 3-digits.</p>
+			</div>
+		</div>
+	</div>
+</body>
